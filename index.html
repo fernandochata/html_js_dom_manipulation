@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <!-- CSS Bootstrap 4.5 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="navbar navbar-light bg-light">
+      <a href="/" class="navbar-brand">Product App</a>
+    </div>
+    <div class="container">
+      <div id="app" class="row pt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header"><h4>Add a product</h4></div>
+            <form action="" class="card-body" id="product-form">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="product name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="number"
+                  step="0.01"
+                  name="price"
+                  id="price"
+                  placeholder="product price"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="number"
+                  name="year"
+                  id="year"
+                  value="2020"
+                  min="1900"
+                  max="2020"
+                  placeholder="year product"
+                />
+              </div>
+              <input
+                type="submit"
+                value="Save"
+                class="btn btn-primary btn btn-block"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="col md 8">
+          <div id="product-list"><!--acá va el listado de productos--></div>
+        </div>
+      </div>
+    </div>
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
