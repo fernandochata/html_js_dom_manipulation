@@ -68,7 +68,6 @@ document // se captura el evento submit del product-form
       ui.showMessage("Please Insert data in all fields", "danger");
     } else {
       const product = new Product(name, price, year); // se crea un objeto con los valores ingresados en los inputs
-      //const ui = new UI();
       ui.addProduct(product);
       ui.resetForm();
       ui.showMessage("Product added successfully", "success");
@@ -76,7 +75,7 @@ document // se captura el evento submit del product-form
     event.preventDefault(); // se detiene que la pagina se vuelva a cargar
   });
 
-document // click en los botones eliminar
+document // click en los botones eliminar, captura el <a> dentro del contenedor del listado completo de productos
   .getElementById("product-list")
   .addEventListener("click", function (event) {
     const ui = new UI();
