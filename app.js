@@ -65,7 +65,7 @@ document // se captura el evento submit del product-form
     const year = document.getElementById("year").value;
     const ui = new UI();
     if (name === "" || price === "" || year === "") {
-      ui.showMessage("Please Insert data in all fields", "danger");
+      ui.showMessage("Please insert data in all fields", "danger");
     } else {
       const product = new Product(name, price, year); // se crea un objeto con los valores ingresados en los inputs
       ui.addProduct(product);
